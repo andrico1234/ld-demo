@@ -15,7 +15,7 @@ function App() {
   const flags = useFlags();
 
   const hasViewPatientAccess = flags.workshopViewPatients ?? false;
-  const hasDeletePatientAccess = flags.workshopDeletePatients ?? false;
+  // const hasDeletePatientAccess = flags.workshopDeletePatients ?? false;
   const deleteAccountCopy = flags.workshopDeleteAccountExperiment;
 
   return (
@@ -25,7 +25,7 @@ function App() {
       <ul>
         <li>Create booking</li>
         {hasViewPatientAccess ? <li>View patient details</li> : null}
-        {hasDeletePatientAccess ? <li>Delete patient details</li> : null}
+        {/* {hasDeletePatientAccess ? <li>Delete patient details</li> : null} */}
         <li>{deleteAccountCopy} personal account</li>
       </ul>
       <ChangeUserButton />

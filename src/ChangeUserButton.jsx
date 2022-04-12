@@ -6,10 +6,6 @@ export function ChangeUserButton() {
   const [currentUser, setCurrentUser] = useState("admin");
   const client = useLDClient();
 
-  console.log(currentUser);
-
-  console.log(client);
-
   const toggleUser = () => {
     client.identify(currentUser === "admin" ? user : admin);
 
